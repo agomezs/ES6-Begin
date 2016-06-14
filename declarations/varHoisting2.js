@@ -1,14 +1,14 @@
 
-function calculatePriceV1(calc, price) {
+function calculatePrice(calc, price) {
   var finalPrice = price;
 
   calc.addRate(function () {
 
     finalPrice = finalPrice + 1;
 
-    // if (price >= 5) {
-    //   // var finalPrice = (price * 0.13) + price;
-    // }
+    if (price >= 5) {
+      var finalPrice = (price * 0.13) + price;
+    }
 
   });
 
@@ -23,9 +23,4 @@ const calculator = {
   }
 };
 
-l(calculatePrice(calculator, 50));
-
-
-function l(i){
-  console.log(i);
-}
+console.log(calculatePrice(calculator, 50));

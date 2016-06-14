@@ -1,5 +1,5 @@
 
-function calculatePriceV1(calc, price) {
+function calculatePrice(calc, price) {
   var finalPrice = price;
 
   calc.addRate(function () {
