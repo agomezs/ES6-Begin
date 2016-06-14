@@ -1,0 +1,26 @@
+{
+  "name": "es6-begin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agomezs/ES6-Begin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agomezs/ES6-Begin/issues"
+  },
+  "homepage": "https://github.com/agomezs/ES6-Begin#readme",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.3"
+  }
+}
