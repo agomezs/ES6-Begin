@@ -1,4 +1,6 @@
 
+// Problem #1: Blocks are not scopes
+
 function calculatePrice(calc, price) {
   var finalPrice = price;
 
