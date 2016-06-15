@@ -15,7 +15,3 @@ myArray.push('Loricariidae');
 myArray.push('Ancistrus');
 
 console.log('array:  ', myArray);
-
-for (let a of myArray) {
-    console.log(a);
-}
