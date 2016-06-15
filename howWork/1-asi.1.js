@@ -1,9 +1,9 @@
-    function sum(a,b)
+  function sum(a, b)
+  {
+    return 
     {
-      return 
-      {
-        sum: a + b
-      }
+      sum: a + b
     }
+  }
 
-    console.log(sum(3,4))
+  console.log(sum(3, 4))
