@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="String Concatenation ES6 -Template Strings">
+    <title>ES6 Template Strings</title>
+
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: rgb(51, 51, 51);
+            background-color: rgb(255, 255, 255);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-top: 0;
+        }
+        
+        .output {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: inherit;
+            background-color: #eee;
+        }
+        
+        input {
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <label for="name">Your name</label>
+    <input id="name" />
+
+    <section class="output" id="output"> </section>
+
+    <script>
+
+      // 'use strict';
+
+    function setHelloMessage() {  
+        let name = document.getElementById('name').value;
+        let outputEl = document.getElementById('output');
+        
+        outputEl.innerHTML = buildTemplate(name) ;
+    }
+
+    function buildTemplate(name) {
+        return "<h1>Hey" + name + "!</h1><div>Welcome back" + name + "</div>"; 
+    }
+
+    document.getElementById('name').addEventListener('keyup', setHelloMessage);
+
+  </script>
+
+</body>
+
+</html>
