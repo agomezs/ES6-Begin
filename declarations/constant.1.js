@@ -3,8 +3,8 @@
 // Example 1 ES5 
 // The variable is rewrited
 
-var paths = {  main: '/home1/index' };
+var MAIN_PATH = '/home3/index'; // with let, same result
 
-paths = {  mains: '/patitos' };
+MAIN_PATH = '/patitos';
 
-console.log(paths);
+console.log(MAIN_PATH);
