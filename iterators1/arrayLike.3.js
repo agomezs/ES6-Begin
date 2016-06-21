@@ -3,8 +3,6 @@ function sum () {
 
     console.log(Array.isArray(arguments));
 
-    // How do I calculate the total
-
     arguments.forEach(function(n) {
         total = total + n;
     });
