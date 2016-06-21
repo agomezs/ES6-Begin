@@ -1,23 +1,24 @@
 'use strict';
 
-let messages = ["Meow!", "I'm a talking cat!", "Callbacks are fun!"];
+var messages = ["Meow!", "I'm a talking cat!", "Callbacks are fun!"];
 
-const cat = {
+var cat = {
     thoughts: [],
-    think(msj) {
-        this.thoughts.push(msj);
+    think: function (msj) {
+        cat.thoughts.push(msj);
     },
-    mindReader() {
-        setTimeout(() =>     
-            console.log(this.thoughts),
+    mindReader: function () {
+        setTimeout(function() {  
+            console.log(cat.thoughts);
+        },
         10);
     }
 };
 
 for (let i = 0; i < messages.length; i++) {
-    setTimeout(() => 
-        cat.think(messages[i]), 
-    1);
+    setTimeout(function () { 
+        cat.think(messages[i]);
+    }, 1);
 }
 
 cat.mindReader();

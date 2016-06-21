@@ -5,19 +5,20 @@ var messages = ["Meow!", "I'm a talking cat!", "Callbacks are fun!"];
 var cat = {
     thoughts: [],
     think: function (msj) {
-        this.thoughts.push(msj);
+        cat.thoughts.push(msj);
     },
     mindReader: function () {
-        setTimeout(() =>     
-            console.log(this.thoughts),
+        setTimeout(function() {  
+            console.log(cat.thoughts);
+        },
         10);
     }
 };
 
 for (var i = 0; i < messages.length; i++) {
-    setTimeout(() => 
-        cat.think(messages[i]), 
-    1);
+    setTimeout(function () { 
+        cat.think(messages[i]);
+    }, 1);
 }
 
 cat.mindReader();

@@ -17,4 +17,4 @@ const calculator = {
   }
 };
 
-console.log(calculatePrice(calculator, 50));
+calculatePrice(calculator, 50)
