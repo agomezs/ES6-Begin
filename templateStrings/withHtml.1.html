@@ -56,8 +56,6 @@
 
     <script>
 
-      // 'use strict';
-
     function setHelloMessage() {  
         let name = document.getElementById('name').value;
         let outputEl = document.getElementById('output');
@@ -65,10 +63,8 @@
         outputEl.innerHTML = buildTemplate(name) ;
     }
 
-    function buildTemplate(name) {  
-        return `
-            <h1>Hey ${name}!</h1>
-            <div>Welcome back ${name}</div>`; 
+    function buildTemplate(name) {
+        return "<h1>Hey " + name + "!</h1><div>Welcome back " + name + "</div>"; 
     }
 
     document.getElementById('name').addEventListener('keyup', setHelloMessage);
