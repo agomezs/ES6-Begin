@@ -5,9 +5,11 @@ var myNumber = 10;
 function changeNumber() {
   myNumber = 25;
   // ... code
-  // var myNumber;
+  var myNumber;
+
+  console.log('inside', myNumber);
 }
 
 changeNumber();
 
-console.log(myNumber);
+console.log('out', myNumber);

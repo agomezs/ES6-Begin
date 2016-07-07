@@ -1,4 +1,6 @@
 
-let adder = (a, b) => { return a + b };
+let adder = (a, b) => { 
+    return a + b 
+};
 
 console.log(adder(2,5));

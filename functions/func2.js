@@ -1,5 +1,5 @@
 
-let funcExpression = function myFunction() {
+let funcExpression = function() {
     console.log('Wow this is a function expression');
 };
 
